@@ -13,12 +13,20 @@ La méthode vue en atelier : **documenter** (`/doc-maker`) → **cadrer** (`/cdc
 
 ## Installation dans Claude Cowork (sans rien coder)
 
-1. Téléchargez le fichier `.zip` du skill voulu dans le dossier [`dist/`](dist/) : [doc-maker.zip](dist/doc-maker.zip), [cdc-maker.zip](dist/cdc-maker.zip), [skill-maker.zip](dist/skill-maker.zip).
-2. Ouvrez l'application Claude, puis **Paramètres** → **Fonctionnalités** (ou *Capabilities*) → **Skills**.
-3. Cliquez sur **Ajouter un skill** et choisissez le fichier `.zip`.
-4. Dans une tâche Cowork, tapez `/doc-maker` suivi de votre sujet. Le skill se déclenche aussi tout seul quand votre demande correspond à sa description.
+1. Téléchargez le fichier `.zip` du skill voulu (un clic, téléchargement direct) :
+   - [cdc-maker.zip](https://github.com/mrsoyer/g2i-claude-skills/releases/latest/download/cdc-maker.zip)
+   - [doc-maker.zip](https://github.com/mrsoyer/g2i-claude-skills/releases/latest/download/doc-maker.zip)
+   - [skill-maker.zip](https://github.com/mrsoyer/g2i-claude-skills/releases/latest/download/skill-maker.zip)
 
-Le libellé exact des menus peut changer selon la version de l'application. Si vous ne trouvez pas le menu Skills, demandez-le au formateur.
+   Les mêmes fichiers sont aussi dans le dossier [`dist/`](dist/) du dépôt.
+2. Ouvrez l'application Claude, puis **Personnaliser** (*Customize*, en bas à gauche) → **Skills**.
+3. Cliquez sur **+** → **Créer un skill** → **Importer un skill** (*Upload a skill*) et choisissez le fichier `.zip`.
+4. Activez le skill dans la liste. Dans une tâche Cowork, tapez `/doc-maker` suivi de votre sujet. Le skill se déclenche aussi tout seul quand votre demande correspond à sa description.
+
+Bon à savoir :
+- Les skills personnalisés demandent un abonnement Pro, Max ou Team, avec **Exécution de code** activée dans **Paramètres** → **Fonctionnalités**.
+- Chaque `.zip` contient le dossier du skill à sa racine (`cdc-maker/SKILL.md`), c'est le format attendu par Claude. Ne décompressez pas le fichier avant l'import.
+- Le libellé exact des menus peut changer selon la version de l'application. Si vous ne trouvez pas le menu Skills, demandez-le au formateur.
 
 ## Installation dans Claude Code (terminal)
 
