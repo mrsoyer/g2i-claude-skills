@@ -1,0 +1,22 @@
+[
+  {
+    "prompt": "/skill-maker un skill qui genere des objets d'email accrocheurs pour le cold mailing",
+    "expected": "Genere un skill simple avec SKILL.md seul, description avec mots-cles cold mailing/objet/email, instructions en imperatif, 2+ exemples d'objets generes. Ne pose pas de questions supplementaires car le besoin est clair."
+  },
+  {
+    "prompt": "/skill-maker un truc pour les newsletters",
+    "expected": "Pose des questions de clarification une par une (quel type de newsletter? quelle frequence? quel personae? quel format?). Ne genere PAS directement le skill car le besoin est trop vague."
+  },
+  {
+    "prompt": "/skill-maker un skill qui analyse un profil LinkedIn, enrichit les donnees, et genere un email personnalise",
+    "expected": "Propose une structure avancee avec agents/ (analyzer, enricher, writer) car pipeline multi-etapes. SKILL.md orchestrateur < 300 lignes. Chaque agent a une mission claire."
+  },
+  {
+    "prompt": "/skill-maker un skill pour envoyer les newsletters aux membres via Supabase",
+    "expected": "Ajoute disable-model-invocation: true car envoi = effet de bord. Inclut allowed-tools avec Bash. Propose des etapes de confirmation avant envoi."
+  },
+  {
+    "prompt": "/skill-maker un skill qui donne a Claude le contexte de notre infra cold email OVH quand on parle de domaines ou de reputation",
+    "expected": "Propose user-invocable: false car c'est du background knowledge. Pas d'etapes actionnables dans le corps. Description avec mots-cles domaine/reputation/OVH/boite mail."
+  }
+]

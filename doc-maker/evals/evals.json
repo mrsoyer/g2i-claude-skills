@@ -1,0 +1,22 @@
+[
+  {
+    "prompt": "/doc-maker Supabase Row Level Security",
+    "expected": "Lance recherche multi-sources sur RLS, cree docs/supabase-rls/ avec 3-5 fichiers (overview, policies, patterns, anti-patterns). Sources citees. Emplacement dans docs/, pas .claude/rules/."
+  },
+  {
+    "prompt": "/doc-maker email marketing",
+    "expected": "Demande clarification scope : delivrabilite? templates? warmup? cold email? Ne genere PAS directement car trop vague."
+  },
+  {
+    "prompt": "/doc-maker API PHP OVH pour le cold mailing",
+    "expected": "Recherche specifique OVH + PHP + SMTP. Cree docs/ovh-email-api/. Inclut port 25, debounce, shoot patterns. Sources OVH citees."
+  },
+  {
+    "prompt": "/doc-maker Stripe webhooks .claude/skills/payment/references/",
+    "expected": "Cree la doc dans .claude/skills/payment/references/ (destination custom valide pour un skill). Format adapte."
+  },
+  {
+    "prompt": "/doc-maker cowork skills",
+    "expected": "Detecte que docs/cowork-skills/ ou equivalent existe deja. Propose mettre a jour ou completer plutot que recreer from scratch."
+  }
+]
